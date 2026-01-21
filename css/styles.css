@@ -294,8 +294,10 @@ body {
 
 .team-list {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .team-title {
@@ -328,6 +330,10 @@ body {
 
 .team-section .member-position {
   text-align: center;
+}
+
+.team-container {
+  padding: 0 28px;
 }
 
 .team-item-container {
@@ -877,72 +883,87 @@ body {
 }
 
 @media screen and (min-width: 768px) {
- .container {
-  max-width: 768px;
-  padding: 0 16px;
- }
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
 
- .features-section {
-  font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
- }
+  .features-section {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 
-.features-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 72px 24px;
-}
+  .features-title {
+    text-align: start;
+  }
 
-.features-item {
-  width: 356px;
-}
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
 
+  .features-item {
+    width: 356px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    gap: 62px 24px;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-  max-width: 1158px;
-  padding: 0 15px;
+    max-width: 1158px;
+    padding: 0 15px;
   }
 
   .section {
-  padding: 120px 0;
- }
+    padding: 120px 0;
+  }
 
   .team-section h3,
-.portfolio-section h3,
-.features-section h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
+  .portfolio-section h3,
+  .features-section h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
 
-.features-section {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
+  .features-section {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 
-.features-list {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
+  .features-title {
+    text-align: start;
+  }
 
-.icon-box {
-  display: flex;
-}
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 
-.features-item {
-  width: 264px;
-}
+  .icon-box {
+    display: flex;
+  }
 
+  .features-item {
+    width: 264px;
+  }
 
-
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
