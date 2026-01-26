@@ -1084,12 +1084,17 @@ body {
     width: 360px;
   }
 
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
   .portfolio-item-container {
     width: 360px;
   }
 
   .hidden-window {
     max-width: 360px;
+    cursor: pointer;
   }
 
   .footer-class {
