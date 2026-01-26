@@ -4,6 +4,12 @@
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -559,7 +565,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /*Нижче додав нове */
   padding-bottom: 16px;
   display: flex;
   justify-content: center;
@@ -569,7 +574,6 @@ body {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  /*Нижче додав нове */
   justify-content: center;
 }
 
