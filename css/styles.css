@@ -462,8 +462,8 @@ body {
 
 .hidden-window img {
   display: block;
-  height: auto;
   object-fit: cover;
+  height: auto;
 }
 
 .hidden-text {
