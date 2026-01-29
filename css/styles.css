@@ -1094,6 +1094,7 @@ body {
 
   .header-container {
     gap: 0;
+    padding: 0 16px;
   }
 
   .nav-list {
